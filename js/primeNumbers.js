@@ -1,16 +1,6 @@
-var number = prompt("Enter number more 1","");
 var ourPrimeNumbers = [];
 
-while (!isCorrectTime(number) && number != null) {
-  number = prompt("Please, enter number again. Enter number more 1","2");
-}
-
-showAllPrimeNumbersTo(number);
-
-function isCorrectTime(n) {
-  var nNumber = parseFloat(n);
-  return !isNaN(nNumber) && (nNumber > 1);
-}
+showAllPrimeNumbersTo(8);
 
 function showAllPrimeNumbersTo(num) {
   var numericN = Number(num);
