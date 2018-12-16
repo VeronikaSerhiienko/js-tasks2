@@ -1,8 +1,11 @@
+var nthFibonachiNumber = showNthFibonachiNumber(7);
+console.log(nthFibonachiNumber);
+var nthFibonachiNumberCycle = showNthFibonachiNumber(7);
+console.log(nthFibonachiNumberCycle);
+
 function showNthFibonachiNumber(n) {
   return n <= 1 ? n : showNthFibonachiNumber(n - 1) + showNthFibonachiNumber(n - 2);
 }
-var nthFibonachiNumber = showNthFibonachiNumber(7);
-console.log(nthFibonachiNumber);
 
 function showNthFibonachiNumberCycle(n) {
   var lastLast = 1;
@@ -14,6 +17,3 @@ function showNthFibonachiNumberCycle(n) {
   }
   return last;
 }
-
-var nthFibonachiNumberCycle = showNthFibonachiNumber(7);
-console.log(nthFibonachiNumberCycle);

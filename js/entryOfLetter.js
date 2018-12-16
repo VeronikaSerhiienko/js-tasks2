@@ -1,5 +1,8 @@
 var position = 0;
 var count = 0;
+
+showEntriesOfLetter("WikipediA is A free online encyclopedia, created and edited by volunteers around the world", "A");
+
 function showEntriesOfLetter(str, letter) {
   var lowerStr = str.toLowerCase();
   var lowerLetter = letter.toLowerCase();
@@ -13,5 +16,3 @@ function showEntriesOfLetter(str, letter) {
   }
   console.log("AmountOfEntries "+ letter + " into " + str + " : " + count);
 }
-
-var amountOfEntries = showEntriesOfLetter("WikipediA is A free online encyclopedia, created and edited by volunteers around the world", "A");
