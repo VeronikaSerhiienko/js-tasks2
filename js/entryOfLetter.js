@@ -7,7 +7,7 @@ function showEntriesOfLetter(str, letter) {
   var lowerLetter = letter.toLowerCase();
   while (true) {
     var foundPosition = lowerStr.indexOf(lowerLetter, position);
-      if (foundPosition == -1) {
+      if (foundPosition === -1) {
         break; 
       }
       count++;
